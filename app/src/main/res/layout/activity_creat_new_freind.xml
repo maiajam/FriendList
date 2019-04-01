@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/l_pading_8"
+    android:paddingEnd="@dimen/layoutStartPadding"
+    android:paddingTop="@dimen/l_pading_8"
     tools:context=".ui.activity.CreatNewFreindActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/CreatNewFriend_labelName_TV"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/Label_FriendName" />
+
+        <EditText
+            android:id="@+id/CreatNewFriend_FreindName_ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/CreatNewFriend_labelSelectGroup_TV"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/Label_GroupName" />
+
+        <Spinner
+            android:id="@+id/CreatNewFriend_GroupName_SP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/l_pading_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Label_Add"
+            android:id="@+id/CreatNewFriend_Add_B"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Label_Cancel"
+            android:id="@+id/CreatNewFriend_Cancel_B"/>
+    </LinearLayout>
+
+
+</LinearLayout>
