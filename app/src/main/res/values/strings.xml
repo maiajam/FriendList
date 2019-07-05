@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FriendList</string>
+    <string name="welcome">welcome</string>
+    <string name="title_activity_friend_list">FriendListActivity</string>
+    <string name="Label_FriendName">Freind Name</string>
+    <string name="Label_GroupName">select group name</string>
+    <string name="Label_Add">Add</string>
+    <string name="Label_Cancel">cancel</string>
+    <string name="Toast_EnterName">please enter your friend Name</string>
+    <string name="Toast_SelectGroup">please select one group</string>
+    
+  <string-array name="Item_groupNames">
+      <item>Group A</item>
+      <item>Group B</item>
+      <item>Group C</item>
+      <item>Group D</item>
+  </string-array>
+</resources>
